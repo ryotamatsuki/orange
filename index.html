@@ -218,3 +218,223 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap">
+  <title>愛媛柑橘｜Ehime Citrus Showcase</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-white overflow-x-hidden"
+      style='font-family:"Noto Serif","Noto Sans",sans-serif;'>
+
+  <!-- ========== Header ========== -->
+  <header class="flex items-center justify-between border-b border-[#f4f2f0] px-10 py-3">
+    <div class="flex items-center gap-4 text-[#181411]">
+      <svg viewBox="0 0 48 48" class="size-5"><path fill="currentColor" d="M24 18.4 42 11.5v22.9c0 .4-.3.8-.6.9L24 42z"/><path fill="currentColor" d="M25.4 2.3a2.6 2.6 0 0 0-2.8 0L5 8.7A2.6 2.6 0 0 0 3 11.5v22.9a4 4 0 0 0 2.6 3.7l17.4 6.7a2.6 2.6 0 0 0 1.9 0l17.4-6.7a4 4 0 0 0 2.6-3.7V11.5a2.6 2.6 0 0 0-2-2.8z"/></svg>
+      <h1 class="text-lg font-bold tracking-[-0.015em]">愛媛柑橘</h1>
+    </div>
+    <nav class="flex-1 flex justify-end gap-8 text-sm font-medium">
+      <a href="#">ホーム</a><a href="#">品種紹介</a><a href="#">農園の物語</a>
+      <a href="#">お客様の声</a><a href="#">ギフト</a><a href="#">FAQ</a>
+      <button class="ml-4 rounded-lg bg-[#ed8b2a] px-4 h-10 font-bold">今すぐ注文</button>
+    </nav>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <section class="relative isolate min-h-[480px] flex flex-col items-center justify-center text-center gap-4 px-4 bg-cover bg-center" style="background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.45)),url('https://upload.wikimedia.org/wikipedia/commons/2/24/Citrus_unshiu_20101125_c.jpg');">
+    <h2 class="text-white text-4xl md:text-5xl font-black tracking-tight">愛媛の太陽を、ひと房に。</h2>
+    <p class="text-white text-base md:text-lg">瀬戸内の穏やかな気候が育んだ多彩な柑橘をご賞味ください。</p>
+    <button class="rounded-lg bg-[#ed8b2a] px-5 h-12 text-base font-bold tracking-[0.015em]">品種ラインナップを見る</button>
+  </section>
+
+  <!-- ========== 品種紹介 ========== -->
+  <main class="max-w-[960px] w-full mx-auto flex-1 px-4 md:px-10 py-10 space-y-10">
+    <h2 class="text-xl font-bold tracking-[-0.015em]">品種紹介</h2>
+
+    <!-- ---------- 基本的な品種 ---------- -->
+    <!-- 温州みかん -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Citrus_unshiu_20101125_c.jpg" alt="温州みかん">
+      <div class="space-y-2">
+        <h3 class="font-bold">温州みかん</h3>
+        <p class="text-sm text-[#897561]">冬のこたつに欠かせない定番みかん。甘みと酸味のバランスが良く、皮が薄いため手で簡単にむけます。ビタミンCが豊富で、ジュースやジャムにも最適。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- いよかん -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Iyokan.jpg" alt="いよかん">
+      <div class="space-y-2">
+        <h3 class="font-bold">いよかん（伊予柑）</h3>
+        <p class="text-sm text-[#897561]">愛媛県の名を冠する芳香豊かなオレンジ。果汁が多く、さわやかな酸味と奥深い甘さが調和します。マーマレードやカクテルの香り付けにも人気。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- ポンカン -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Ponkans_for_sale.jpg" alt="ポンカン">
+      <div class="space-y-2">
+        <h3 class="font-bold">ポンカン</h3>
+        <p class="text-sm text-[#897561]">香り高く小ぶりで皮がむきやすい人気品種。濃厚な甘さと爽やかな余韻があり、子どもから大人まで幅広く愛されています。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- ---------- 愛媛育成ブランド ---------- -->
+    <!-- 紅まどんな / 媛まどんな -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Ehime_Beni_Madonna_2021-12_ac.jpg" alt="紅まどんな">
+      <div class="space-y-2">
+        <h3 class="font-bold">紅まどんな（媛まどんな）</h3>
+        <p class="text-sm text-[#897561]">ゼリーのようにとろける果肉と高糖度が魅力のプレミアム柑橘。薄い外皮ごとカットして食べれば、芳醇な香りとジューシーさが口いっぱいに広がります。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- 甘平 -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Kanpei_for_sale_-_2025_Feb_11.jpeg" alt="甘平">
+      <div class="space-y-2">
+        <h3 class="font-bold">甘平（かんぺい）</h3>
+        <p class="text-sm text-[#897561]">西之内系×ポンカン由来。シャキッとした果肉が弾け、濃厚な甘さがストレートに感じられます。贈答用にも人気急上昇。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- せとか -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Setoka_for_sale_-_2025_Feb_1.jpg" alt="せとか">
+      <div class="space-y-2">
+        <h3 class="font-bold">せとか</h3>
+        <p class="text-sm text-[#897561]">「柑橘の大トロ」と称される濃蜜系。果汁・糖度ともにトップクラスで、滴るほどジューシー。香り高く後味にほのかな酸味。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- はるみ -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Harumi_orange.jpg" alt="はるみ">
+      <div class="space-y-2">
+        <h3 class="font-bold">はるみ</h3>
+        <p class="text-sm text-[#897561]">粒が大きくプチプチ食感。手で簡単に皮がむける手軽さと、ハチミツのようにコク深い甘さで人気。サラダやパフェの彩りにも。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- しらぬい／デコポン -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Dekopon.jpg" alt="デコポン">
+      <div class="space-y-2">
+        <h3 class="font-bold">しらぬい（デコポン）</h3>
+        <p class="text-sm text-[#897561]">頭の「デコ」がチャーミング。とろける甘さとジューシーさで圧倒的ファンを持つ品種。酸味が少なく、お子様にも食べやすい。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- 愛媛果試第36号（紅プリンセス） -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Ehime_Beni_Madonna_2021-12_ac.jpg" alt="紅プリンセス">
+      <div class="space-y-2">
+        <h3 class="font-bold">愛媛果試第36号（紅プリンセス）</h3>
+        <p class="text-sm text-[#897561]">紅まどんなの姉妹品種として誕生。果肉はとろける食感で、濃厚な甘みと華やかな香りが特徴。現在は流通量が少なく希少価値が高い。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- ---------- 初春〜初夏品種 ---------- -->
+    <!-- はるか -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Haruka10-2022.jpg" alt="はるか">
+      <div class="space-y-2">
+        <h3 class="font-bold">はるか</h3>
+        <p class="text-sm text-[#897561]">レモン色の見た目に反して酸味は穏やか。やさしい甘さと香りで人気急上昇中。皮がしっかりしているため長期保存もOK。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- 河内晩柑 -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Kawachi_bankan_4_%E6%B2%B3%E5%86%85%E6%99%A9%E6%9F%91.jpg" alt="河内晩柑">
+      <div class="space-y-2">
+        <h3 class="font-bold">河内晩柑（美生柑／宇和ゴールド）</h3>
+        <p class="text-sm text-[#897561]">グレープフルーツに似た爽やかな香りながら苦味が少なく食べやすい。夏場の水分補給やサラダのアクセントとして最適。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- 甘夏 -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Amanatsu_fruit.jpg" alt="甘夏">
+      <div class="space-y-2">
+        <h3 class="font-bold">甘夏（川野夏橙）</h3>
+        <p class="text-sm text-[#897561]">ほどよい酸味とほろ苦さが特徴。果肉をサラダに、皮はピールやマーマレードにと丸ごと活用できる万能柑橘。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- ニューサマーオレンジ（ヒュウガナツ） -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Hyuganatsu_cut.jpg" alt="ニューサマーオレンジ">
+      <div class="space-y-2">
+        <h3 class="font-bold">ニューサマーオレンジ（ヒュウガナツ）</h3>
+        <p class="text-sm text-[#897561]">爽やかな香りと上品な甘酸っぱさ。白いワタも甘いため皮ごとスライスして食べられます。暑い季節のビタミン補給に。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- ---------- 加工用・希少品種 ---------- -->
+    <!-- フジミカン -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <!-- ※フジミカンの公的画像が未流通のため温州みかん画像を代用 -->
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Citrus_unshiu_20101125_c.jpg" alt="フジミカン">
+      <div class="space-y-2">
+        <h3 class="font-bold">フジミカン（藤中）</h3>
+        <p class="text-sm text-[#897561]">温州みかんの極早生系。酸味が控えめで加熱加工しても風味が残りやすく、ジュースやスイーツ原料として重宝されています。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- スイートスプリング -->
+    <article class="grid md:grid-cols-2 gap-4 items-center">
+      <img class="w-full aspect-video object-cover rounded-lg" src="https://images.unsplash.com/photo-1584447122132-dc8305befd8d?auto=format&fit=crop&w=1000&q=80" alt="スイートスプリング">
+      <div class="space-y-2">
+        <h3 class="font-bold">スイートスプリング</h3>
+        <p class="text-sm text-[#897561]">温州みかん×八朔由来。酸味がほとんど無く、優しい甘さが特徴。果汁が多く、フレッシュジュースに最適。</p>
+        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
+      </div>
+    </article>
+
+    <!-- ========== 農園の取組み ========== -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold tracking-[-0.015em]">農園の物語と持続可能性</h2>
+      <p>愛媛の生産者は「自然と人の共生」をテーマに、天敵を活かした減農薬栽培や有機肥料の活用を推進。除草剤 40％削減・有機肥料 80％使用・生物多様性指数 1.5 倍を達成し、未来に続く農業モデルを確立しています。</p>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="border rounded-lg p-6 text-center"><p class="text-sm">除草剤削減率</p><p class="text-2xl font-bold">40%</p></div>
+        <div class="border rounded-lg p-6 text-center"><p class="text-sm">有機肥料使用率</p><p class="text-2xl font-bold">80%</p></div>
+        <div class="border rounded-lg p-6 text-center"><p class="text-sm">生物多様性指数</p><p class="text-2xl font-bold">1.5×</p></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="bg-white border-t border-[#f4f2f0] mt-10">
+    <div class="max-w-[960px] mx-auto px-5 py-10 text-center space-y-6">
+      <nav class="flex flex-wrap justify-center gap-6 text-[#897561] text-base">
+        <a href="#">プライバシーポリシー</a><a href="#">利用規約</a><a href="#">お問い合わせ</a>
+      </nav>
+      <div class="flex justify-center gap-4 text-[#897561]">
+        <!-- SNS icons (svg inline omitted for brevity) -->
+      </div>
+      <p class="text-[#897561] text-sm">© 2025 Ehime Citrus Cooperative</p>
+    </div>
+  </footer>
+</body>
+</html>
