@@ -1,220 +1,553 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link rel="stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap">
-  <title>愛媛柑橘｜Ehime Citrus Showcase</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64," />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-</head>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
 
-<body class="min-h-screen flex flex-col bg-white overflow-x-hidden"
-      style='font-family:"Noto Serif","Noto Sans",sans-serif;'>
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-  <!-- ========== Header ========== -->
-  <header class="flex items-center justify-between border-b border-[#f4f2f0] px-10 py-3">
-    <div class="flex items-center gap-4 text-[#181411]">
-      <svg viewBox="0 0 48 48" class="size-5"><path fill="currentColor" d="M24 18.4 42 11.5v22.9c0 .4-.3.8-.6.9L24 42z"/><path fill="currentColor" d="M25.4 2.3a2.6 2.6 0 0 0-2.8 0L5 8.7A2.6 2.6 0 0 0 3 11.5v22.9a4 4 0 0 0 2.6 3.7l17.4 6.7a2.6 2.6 0 0 0 1.9 0l17.4-6.7a4 4 0 0 0 2.6-3.7V11.5a2.6 2.6 0 0 0-2-2.8z"/></svg>
-      <h1 class="text-lg font-bold tracking-[-0.015em]">愛媛柑橘</h1>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f2f0] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#181411]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#181411] text-lg font-bold leading-tight tracking-[-0.015em]">愛媛柑橘</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#181411] text-sm font-medium leading-normal" href="#">ホーム</a>
+              <a class="text-[#181411] text-sm font-medium leading-normal" href="#">品種紹介</a>
+              <a class="text-[#181411] text-sm font-medium leading-normal" href="#">農園の物語</a>
+              <a class="text-[#181411] text-sm font-medium leading-normal" href="#">お客様の声</a>
+              <a class="text-[#181411] text-sm font-medium leading-normal" href="#">ギフト</a>
+              <a class="text-[#181411] text-sm font-medium leading-normal" href="#">よくある質問</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#ed8b2a] text-[#181411] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">今すぐ注文</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxMemdbWcCii6bcEe7HC2KWSb6VLLxyHGvyrZV_RFRytYo1TB6wGb7BFcdzLnYChTx4IlW7JbwmUwqRThV26BT_VcOKjJlWFuCSqd0RHcji3z0r3KwATkslzaZAMBM0YRaylj9Le-q5WME70mBpBzlO_HMhkyvbJImNgQ4_xhF-AI0AZjZghr7KQTqZF616fZHO1RCbLe-MZhPY6KW_LKRx68Uj5RNd4K7Zobq5ZEJ0GyQQ-ybLzHyM7UZyvfSqkqeNFx6z45vkfk");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      愛媛の太陽を、ひと房に。
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      自然豊かな愛媛で育まれた柑橘の芳醇な味わいをお届けします。
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#ed8b2a] text-[#181411] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">品種ラインナップを見る</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">品種紹介</h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#181411] text-base font-bold leading-tight">みかん</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">
+                      愛媛みかんは、温暖な気候と熟練の栽培技術によって育まれ、濃厚な甘みと爽やかな酸味の絶妙なバランスが特徴です。段々畑で太陽をたっぷり浴び、温州みかんの伝統的な剪定方法で丁寧に育てられています。ビタミンCが豊富で、そのまま食べるのはもちろん、デザートやスムージーにも最適です。
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f4f2f0] text-[#181411] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">今すぐ注文</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhMuAJJsiLC8IYAMmfTFcAGwEPMICUCJusyUQoHjVdCsR29OkzLY8X8gbmLXlvJxtS_bI05Dc6Lv976WT7vRQ9dUSEXg7N_suirCLJunjvHSruL-uth7lZhyrL1Tzu1si1h2YWIHXvUBbf_0wBD935RZGjhz75f0gNmBHuKjjhKbUem-lKS1KO4v3yiIUzPsVeF-4vI9xm2CkIQuki4gLTn1feLlL8Sm-r1UzQCm8z_hsgLdi_kV32ClllYzfnkwvBHKnGuYjEKp4");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#181411] text-base font-bold leading-tight">いよかん</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">
+                      いよかんは、ジューシーで香り高く、甘みと酸味の調和がとれた味わいが魅力です。愛媛の温暖な気候と、長年の経験に基づく栽培方法で育てられています。クエン酸を含み、疲労回復にも効果的。生食はもちろん、マーマレードやカクテルにしても美味しくいただけます。
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f4f2f0] text-[#181411] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">今すぐ注文</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYmnjuxNeKVLz4fWZBKWrAtEtY7OQl1LUSnRJg_6qbk2DZfH1uSVpfyKBydu1tH62cHZlFMTD98y6P8mnlk-5HexVw1sO6LzK_UeH_QDJ_nlJcQL8DoF6rVNOJnHMpwhQZ1GrdyqM5HqJLJCGiVvl5yVNOhFvl1fr_6tqhd1Mx6YoLpnXEA339slf6iPmDRGRLmEn_AGm8_9MtZw-TqwjQajcvFUjsTelsXjR0Vac2fsbdszhCW4W7PIgGUElQ-xHBz7m8IRkKe5s");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#181411] text-base font-bold leading-tight">甘平</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">
+                      甘平は、薄い皮とプチプチとした食感が特徴で、濃厚な甘みと上品な香りが楽しめます。愛媛の限られた地域で、手間暇かけて栽培されています。ビタミンCが豊富で、デザートとしてそのまま食べるのがおすすめ。特別な日の贈り物にも最適です。
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f4f2f0] text-[#181411] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">今すぐ注文</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS-f_uBDRn8UW9lDPuYRRFA_wguqpRz3rbWq8H10JiH4I7Xt8enAKCTXk-NBR_CJlFAcKSDeMtBb8nn1NEngc6Zy-R3UT6XH6arUIBExDkl-Oo60T3qYeCkt8jJjwNvBj1vVtRl8xsKgMcReF8W-jMN3GPUAC2SSX-kvVYGLRQbLY3AqTGHtLQ25Zg-aexoMLF9f2fOMVrFk9Ahf03ITlgdn_VE7VsIjUcEShWc9zZ-a2avfXBAiH-7TZLdv1NPeR41fsU-r3rKaU");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#181411] text-base font-bold leading-tight">はるか</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">
+                      はるかは、レモンのような爽やかな香りと、まろやかな甘みが特徴の柑橘です。愛媛の温暖な気候と、丁寧な栽培管理によって育てられています。クエン酸を含み、リフレッシュ効果も期待できます。そのまま食べるのはもちろん、サラダやドレッシングに加えても美味しくいただけます。
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f4f2f0] text-[#181411] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">今すぐ注文</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpaA8XF5fpSUsmcd0gb3XRtFcGgx3sSiPHq9MPT75hikb8Nxy0lhn1GxYoDWcGldPTorkBKDMaj1MKyq7hHkkA7ulkunHgqeGF5l78S2czm2te33iyXvJEhfaTQtlpCKq-m_ZleSjA68Ih9mGg3HURGGKYPLFLGnSRv1xot6xucEa18TTd6F_SNDPgZI8RD_fgxK1HnyC_T8l3vhVQ7Ax50mzpePX0QRuPNLnw7K74vwebSTSORqXrkUCprL92eKtnk_7ERGaT_7A");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#181411] text-base font-bold leading-tight">不知火（デコポン）</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">
+                      不知火（デコポン）は、頭部の突起と濃厚な甘みが特徴で、ジューシーで食べ応えがあります。愛媛の温暖な気候と、高度な栽培技術によって育てられています。ビタミンCが豊富で、そのまま食べるのが一番のおすすめ。デザートやスムージーにも最適です。
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f4f2f0] text-[#181411] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">今すぐ注文</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBzz30VKfImgVRWg9yDKV7qzIXFaYT4nG0M0WEJM8o8NWmBB4bTmARWv3dUyWDIg6Xd8qDawZIW45vUwS5YTpVgndcZzfcX1RLzWUOtu3yvjl_gluDIi9JM5lDnvMdr83mCNwwYaDE79K85avWuVUdMPr6IGY2rkfqeg88GA7TXw33xJlxc5RBoHXKi-Mmh1UOMv9uHllxzKVhDJIt3C0SbLBeR6lLghbrMKn_Ucb4MV4EM4hJe_Kw2LzYJlbrhyvqyLRneCYbglwU");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">農園の物語と持続可能性</h2>
+            <p class="text-[#181411] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              愛媛の柑橘農家は、自然との共生を大切にしながら、持続可能な農業に取り組んでいます。除草剤の使用を減らし、天敵を利用した害虫駆除など、環境に優しい栽培方法を実践。40%の除草剤削減率を達成し、生物多様性の保全にも貢献しています。
+            </p>
+            <div class="flex flex-wrap gap-4 p-4">
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-[#e6e0db]">
+                <p class="text-[#181411] text-base font-medium leading-normal">除草剤削減率</p>
+                <p class="text-[#181411] tracking-light text-2xl font-bold leading-tight">40%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-[#e6e0db]">
+                <p class="text-[#181411] text-base font-medium leading-normal">有機肥料使用率</p>
+                <p class="text-[#181411] tracking-light text-2xl font-bold leading-tight">80%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-[#e6e0db]">
+                <p class="text-[#181411] text-base font-medium leading-normal">生物多様性指数</p>
+                <p class="text-[#181411] tracking-light text-2xl font-bold leading-tight">1.5倍</p>
+              </div>
+            </div>
+            <h2 class="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">お客様の声</h2>
+            <div class="flex flex-col gap-8 overflow-x-hidden bg-white p-4">
+              <div class="flex flex-col gap-3 bg-white">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBq1Iq32p6ogDh1wcoOlQI6Zt8YXn4uyAd8pXS1M-E3DOSrX0P3q0HnRiO0M3Api4LRb3ICgsYywXC_JRVpDyx-CdiX7KachPBVg17DOUy6brY8HsD1bfGTVYZoTqQAoYJEE0FYrscIXo02V2bqJjaLALoMcPd5KWFPD9s0LTgeh-u6Kvrzti4OqRxW9XNkTl-wjmGpdWpnpFDfpAvMRYAYU7D7ibyKjkslbBQIrydFDRA15YjDkuAWQ05swSsHWqPu78Ci4l6eQaM");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-[#181411] text-base font-medium leading-normal">田中 恵子</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">2024年10月26日</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-[#181411] text-base font-normal leading-normal">
+                  愛媛みかんの甘さと酸味のバランスが最高！家族みんなで美味しくいただきました。来年もリピートします！
+                </p>
+                <div class="flex gap-9 text-[#897561]">
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">12</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">2</p>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 bg-white">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJ2fFAHaDqWyvMTc6opUpOu7l6QFDGhNtDzxIPlm8c9YzdohpmZkrbe5svHA-O-D8RJ0swItK_ka3X-0KE5i18hZg-6tbKJJ6OWm9cK1_NSq6Fl6kus7H7FvRIDFfNy1gUk2rPdxxp5yD41wJzOpZw3dWRKf1aD0Ig-wij6ATXYlUWfF2uz600PbtzwI0LIVas-F29m0b5KlTOwZrJ5_mh7J5E6pKqSC7bD-8GT2NvSkoK_Hj1SPTfOWjaRTgLdgyJDlPBZZOXArk");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-[#181411] text-base font-medium leading-normal">山田 太郎</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">2024年11月15日</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#cec4ba]" data-icon="Star" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-[#181411] text-base font-normal leading-normal">
+                  いよかんの香りがとても良くて、ジューシーで美味しかったです。少し酸味がありましたが、それがまた良かったです。
+                </p>
+                <div class="flex gap-9 text-[#897561]">
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">8</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">1</p>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 bg-white">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhj9IW9yh7UPNcYlufbKLuuiy7HvDZsd4JL1aOUaogp7rtAOmyLU6zR_G-uYw-TJabwEuLhpI33-njk1DCH7jSD-RBHOnEteghshVUSIII10DEQgtGS0jQ6ButkCvRiXt0ERRAYbXQKoYjf7TcFTe6npKYY7AHOB3KbIpy5Svx7_9QM5wQit7A1nilOku95unwW8tkRX_OaTcKu7fHgSqk6XKY1kvj5DAmLlNOFQqU8N2AuaSzwD9ayBvEYC3E3kf2lvZMNHaqDXs");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-[#181411] text-base font-medium leading-normal">佐藤 花子</p>
+                    <p class="text-[#897561] text-sm font-normal leading-normal">2024年12月5日</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#181411]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-[#181411] text-base font-normal leading-normal">
+                  甘平は初めて食べましたが、プチプチとした食感と濃厚な甘みに感動しました。贈り物にも喜ばれると思います。
+                </p>
+                <div class="flex gap-9 text-[#897561]">
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">15</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">ギフトセット</h2>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPjGr15JFL913ayF5jUslx69V_MFEbK-CzeN3tP_tK0S1IZ2h_3PHmkHHYrED0IHMWicQ09O0COd_O3mz_ih7qvvwXk4oYkF8Kn74_4MkQrtvud5dc53A_MCe5_c6fTE5Jj1mqYBmZCh8BXPQY9UaLWSitpqBFVy373FXNaTzKBob_K-Ip1DaLvfJFB4z10AZfoIm7y7KgTVmuSFEFZTLReG4FIUOZbUvZNbR0FyrQv9LBoB_h73IQLul-yWCVoiJi8KtAZWg3cas");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#181411] text-lg font-bold leading-tight tracking-[-0.015em]">愛媛柑橘ギフトセット</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#897561] text-base font-normal leading-normal">大切な方への贈り物に、愛媛の太陽を詰め込んだギフトセットはいかがですか？</p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#ed8b2a] text-[#181411] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">ギフトを注文する</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">よくある質問</h2>
+            <div class="flex flex-col p-4 gap-3">
+              <details class="flex flex-col rounded-lg border border-[#e6e0db] bg-white px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#181411] text-sm font-medium leading-normal">配送について</p>
+                  <div class="text-[#181411] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#897561] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e6e0db] bg-white px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#181411] text-sm font-medium leading-normal">保存方法について</p>
+                  <div class="text-[#181411] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#897561] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e6e0db] bg-white px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#181411] text-sm font-medium leading-normal">贈答対応について</p>
+                  <div class="text-[#181411] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#897561] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e6e0db] bg-white px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#181411] text-sm font-medium leading-normal">返品・交換について</p>
+                  <div class="text-[#181411] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#897561] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e6e0db] bg-white px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#181411] text-sm font-medium leading-normal">その他のお問い合わせ</p>
+                  <div class="text-[#181411] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#897561] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#897561] text-base font-normal leading-normal min-w-40" href="#">プライバシーポリシー</a>
+                <a class="text-[#897561] text-base font-normal leading-normal min-w-40" href="#">利用規約</a>
+                <a class="text-[#897561] text-base font-normal leading-normal min-w-40" href="#">お問い合わせ</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#897561]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#897561]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#897561]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#897561] text-base font-normal leading-normal">© 2025 Ehime Citrus Cooperative</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
     </div>
-    <nav class="flex-1 flex justify-end gap-8 text-sm font-medium">
-      <a href="#">ホーム</a><a href="#">品種紹介</a><a href="#">農園の物語</a>
-      <a href="#">お客様の声</a><a href="#">ギフト</a><a href="#">FAQ</a>
-      <button class="ml-4 rounded-lg bg-[#ed8b2a] px-4 h-10 font-bold">今すぐ注文</button>
-    </nav>
-  </header>
-
-  <!-- ========== Hero ========== -->
-  <section class="relative isolate min-h-[480px] flex flex-col items-center justify-center text-center gap-4 px-4 bg-cover bg-center" style="background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.45)),url('https://upload.wikimedia.org/wikipedia/commons/2/24/Citrus_unshiu_20101125_c.jpg');">
-    <h2 class="text-white text-4xl md:text-5xl font-black tracking-tight">愛媛の太陽を、ひと房に。</h2>
-    <p class="text-white text-base md:text-lg">瀬戸内の穏やかな気候が育んだ多彩な柑橘をご賞味ください。</p>
-    <button class="rounded-lg bg-[#ed8b2a] px-5 h-12 text-base font-bold tracking-[0.015em]">品種ラインナップを見る</button>
-  </section>
-
-  <!-- ========== 品種紹介 ========== -->
-  <main class="max-w-[960px] w-full mx-auto flex-1 px-4 md:px-10 py-10 space-y-10">
-    <h2 class="text-xl font-bold tracking-[-0.015em]">品種紹介</h2>
-
-    <!-- ---------- 基本的な品種 ---------- -->
-    <!-- 温州みかん -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Citrus_unshiu_20101125_c.jpg" alt="温州みかん">
-      <div class="space-y-2">
-        <h3 class="font-bold">温州みかん</h3>
-        <p class="text-sm text-[#897561]">冬のこたつに欠かせない定番みかん。甘みと酸味のバランスが良く、皮が薄いため手で簡単にむけます。ビタミンCが豊富で、ジュースやジャムにも最適。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- いよかん -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Iyokan.jpg" alt="いよかん">
-      <div class="space-y-2">
-        <h3 class="font-bold">いよかん（伊予柑）</h3>
-        <p class="text-sm text-[#897561]">愛媛県の名を冠する芳香豊かなオレンジ。果汁が多く、さわやかな酸味と奥深い甘さが調和します。マーマレードやカクテルの香り付けにも人気。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- ポンカン -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Ponkans_for_sale.jpg" alt="ポンカン">
-      <div class="space-y-2">
-        <h3 class="font-bold">ポンカン</h3>
-        <p class="text-sm text-[#897561]">香り高く小ぶりで皮がむきやすい人気品種。濃厚な甘さと爽やかな余韻があり、子どもから大人まで幅広く愛されています。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- ---------- 愛媛育成ブランド ---------- -->
-    <!-- 紅まどんな / 媛まどんな -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Ehime_Beni_Madonna_2021-12_ac.jpg" alt="紅まどんな">
-      <div class="space-y-2">
-        <h3 class="font-bold">紅まどんな（媛まどんな）</h3>
-        <p class="text-sm text-[#897561]">ゼリーのようにとろける果肉と高糖度が魅力のプレミアム柑橘。薄い外皮ごとカットして食べれば、芳醇な香りとジューシーさが口いっぱいに広がります。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- 甘平 -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Kanpei_for_sale_-_2025_Feb_11.jpeg" alt="甘平">
-      <div class="space-y-2">
-        <h3 class="font-bold">甘平（かんぺい）</h3>
-        <p class="text-sm text-[#897561]">西之内系×ポンカン由来。シャキッとした果肉が弾け、濃厚な甘さがストレートに感じられます。贈答用にも人気急上昇。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- せとか -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Setoka_for_sale_-_2025_Feb_1.jpg" alt="せとか">
-      <div class="space-y-2">
-        <h3 class="font-bold">せとか</h3>
-        <p class="text-sm text-[#897561]">「柑橘の大トロ」と称される濃蜜系。果汁・糖度ともにトップクラスで、滴るほどジューシー。香り高く後味にほのかな酸味。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- はるみ -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Harumi_orange.jpg" alt="はるみ">
-      <div class="space-y-2">
-        <h3 class="font-bold">はるみ</h3>
-        <p class="text-sm text-[#897561]">粒が大きくプチプチ食感。手で簡単に皮がむける手軽さと、ハチミツのようにコク深い甘さで人気。サラダやパフェの彩りにも。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- しらぬい／デコポン -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Dekopon.jpg" alt="デコポン">
-      <div class="space-y-2">
-        <h3 class="font-bold">しらぬい（デコポン）</h3>
-        <p class="text-sm text-[#897561]">頭の「デコ」がチャーミング。とろける甘さとジューシーさで圧倒的ファンを持つ品種。酸味が少なく、お子様にも食べやすい。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- 愛媛果試第36号（紅プリンセス） -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Ehime_Beni_Madonna_2021-12_ac.jpg" alt="紅プリンセス">
-      <div class="space-y-2">
-        <h3 class="font-bold">愛媛果試第36号（紅プリンセス）</h3>
-        <p class="text-sm text-[#897561]">紅まどんなの姉妹品種として誕生。果肉はとろける食感で、濃厚な甘みと華やかな香りが特徴。現在は流通量が少なく希少価値が高い。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- ---------- 初春〜初夏品種 ---------- -->
-    <!-- はるか -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Haruka10-2022.jpg" alt="はるか">
-      <div class="space-y-2">
-        <h3 class="font-bold">はるか</h3>
-        <p class="text-sm text-[#897561]">レモン色の見た目に反して酸味は穏やか。やさしい甘さと香りで人気急上昇中。皮がしっかりしているため長期保存もOK。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- 河内晩柑 -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Kawachi_bankan_4_%E6%B2%B3%E5%86%85%E6%99%A9%E6%9F%91.jpg" alt="河内晩柑">
-      <div class="space-y-2">
-        <h3 class="font-bold">河内晩柑（美生柑／宇和ゴールド）</h3>
-        <p class="text-sm text-[#897561]">グレープフルーツに似た爽やかな香りながら苦味が少なく食べやすい。夏場の水分補給やサラダのアクセントとして最適。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- 甘夏 -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Amanatsu_fruit.jpg" alt="甘夏">
-      <div class="space-y-2">
-        <h3 class="font-bold">甘夏（川野夏橙）</h3>
-        <p class="text-sm text-[#897561]">ほどよい酸味とほろ苦さが特徴。果肉をサラダに、皮はピールやマーマレードにと丸ごと活用できる万能柑橘。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- ニューサマーオレンジ（ヒュウガナツ） -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Hyuganatsu_cut.jpg" alt="ニューサマーオレンジ">
-      <div class="space-y-2">
-        <h3 class="font-bold">ニューサマーオレンジ（ヒュウガナツ）</h3>
-        <p class="text-sm text-[#897561]">爽やかな香りと上品な甘酸っぱさ。白いワタも甘いため皮ごとスライスして食べられます。暑い季節のビタミン補給に。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- ---------- 加工用・希少品種 ---------- -->
-    <!-- フジミカン -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <!-- ※フジミカンの公的画像が未流通のため温州みかん画像を代用 -->
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Citrus_unshiu_20101125_c.jpg" alt="フジミカン">
-      <div class="space-y-2">
-        <h3 class="font-bold">フジミカン（藤中）</h3>
-        <p class="text-sm text-[#897561]">温州みかんの極早生系。酸味が控えめで加熱加工しても風味が残りやすく、ジュースやスイーツ原料として重宝されています。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- スイートスプリング -->
-    <article class="grid md:grid-cols-2 gap-4 items-center">
-      <img class="w-full aspect-video object-cover rounded-lg" src="https://images.unsplash.com/photo-1584447122132-dc8305befd8d?auto=format&fit=crop&w=1000&q=80" alt="スイートスプリング">
-      <div class="space-y-2">
-        <h3 class="font-bold">スイートスプリング</h3>
-        <p class="text-sm text-[#897561]">温州みかん×八朔由来。酸味がほとんど無く、優しい甘さが特徴。果汁が多く、フレッシュジュースに最適。</p>
-        <button class="rounded-lg bg-[#f4f2f0] px-4 h-8 text-sm font-medium">今すぐ注文</button>
-      </div>
-    </article>
-
-    <!-- ========== 農園の取組み ========== -->
-    <section class="space-y-4">
-      <h2 class="text-xl font-bold tracking-[-0.015em]">農園の物語と持続可能性</h2>
-      <p>愛媛の生産者は「自然と人の共生」をテーマに、天敵を活かした減農薬栽培や有機肥料の活用を推進。除草剤 40％削減・有機肥料 80％使用・生物多様性指数 1.5 倍を達成し、未来に続く農業モデルを確立しています。</p>
-      <div class="grid sm:grid-cols-3 gap-4">
-        <div class="border rounded-lg p-6 text-center"><p class="text-sm">除草剤削減率</p><p class="text-2xl font-bold">40%</p></div>
-        <div class="border rounded-lg p-6 text-center"><p class="text-sm">有機肥料使用率</p><p class="text-2xl font-bold">80%</p></div>
-        <div class="border rounded-lg p-6 text-center"><p class="text-sm">生物多様性指数</p><p class="text-2xl font-bold">1.5×</p></div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ========== Footer ========== -->
-  <footer class="bg-white border-t border-[#f4f2f0] mt-10">
-    <div class="max-w-[960px] mx-auto px-5 py-10 text-center space-y-6">
-      <nav class="flex flex-wrap justify-center gap-6 text-[#897561] text-base">
-        <a href="#">プライバシーポリシー</a><a href="#">利用規約</a><a href="#">お問い合わせ</a>
-      </nav>
-      <div class="flex justify-center gap-4 text-[#897561]">
-        <!-- SNS icons (svg inline omitted for brevity) -->
-      </div>
-      <p class="text-[#897561] text-sm">© 2025 Ehime Citrus Cooperative</p>
-    </div>
-  </footer>
-</body>
+  </body>
 </html>
