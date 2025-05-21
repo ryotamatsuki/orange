@@ -1,0 +1,367 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Serif:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
+    />
+    <title>愛媛柑橘 | 品種図鑑</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body
+    class="min-h-screen flex flex-col bg-white overflow-x-hidden"
+    style='font-family:"Noto Serif","Noto Sans",sans-serif'
+  >
+    <!-- ================================================= HEADER -->
+    <header
+      class="flex items-center justify-between gap-4 border-b border-[#f4f2f0] px-10 py-3"
+    >
+      <div class="flex items-center gap-3">
+        <svg
+          class="size-5 text-[#ed8b2a]"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <circle cx="12" cy="12" r="10" />
+        </svg>
+        <h1 class="text-lg font-bold tracking-[-0.015em]">愛媛柑橘</h1>
+      </div>
+
+      <nav class="flex gap-8 text-sm font-medium">
+        <a href="#">ホーム</a>
+        <a href="#">品種図鑑</a>
+        <a href="#">農園ストーリー</a>
+        <a href="#">ギフト</a>
+        <a href="#">FAQ</a>
+      </nav>
+
+      <button
+        class="rounded-lg bg-[#ed8b2a] px-4 py-2 text-sm font-bold tracking-[0.015em] text-[#181411]"
+      >
+        今すぐ注文
+      </button>
+    </header>
+
+    <!-- ================================================= HERO -->
+    <section
+      class="flex flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat px-4 py-16 text-center"
+      style='background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.5)),url("https://placehold.co/1920x600?text=%E6%84%9B%E5%AA%9B%E6%9F%91%E6%A9%98+Hero")'
+    >
+      <h2
+        class="text-3xl font-black leading-tight tracking-[-0.033em] text-white md:text-5xl"
+      >
+        愛媛の太陽を、ひと房に。
+      </h2>
+      <p class="text-sm text-white md:text-base">
+        温暖な瀬戸内の気候と卓越した栽培技術が育む、多彩な柑橘の魅力をご紹介します。
+      </p>
+      <a
+        href="#varieties"
+        class="rounded-lg bg-[#ed8b2a] px-6 py-3 text-sm font-bold tracking-[0.015em] text-[#181411]"
+        >品種一覧へ</a
+      >
+    </section>
+
+    <!-- ================================================= VARIETIES -->
+    <main id="varieties" class="mx-auto max-w-5xl px-6 py-12">
+      <h3 class="mb-8 text-2xl font-bold tracking-[-0.015em]">品種図鑑</h3>
+
+      <!-- ==== 基本3種 ==== -->
+      <section class="space-y-10">
+        <!-- 温州みかん -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E6%B8%A9%E5%B7%9E%E3%81%BF%E3%81%8B%E3%82%93"
+            alt="温州みかん"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">温州みかん</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              甘みと酸味のバランスが絶妙な冬の定番。愛媛では海風が当たる段々畑で栽培され、
+              果皮が薄く果汁が豊富。爽やかな香りとコク深い味わいで世代を超えて愛されています。
+            </p>
+          </div>
+        </article>
+
+        <!-- いよかん -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E4%BC%8A%E4%BA%88%E6%9F%91"
+            alt="いよかん"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">いよかん（伊予柑）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              切った瞬間に立ち上るフローラルな芳香が魅力。ぷりっと張りのある果肉はジューシーで、
+              甘みと酸味が調和。皮を活かしたマーマレードやピールチョコもおすすめです。
+            </p>
+          </div>
+        </article>
+
+        <!-- ポンカン -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E3%83%9D%E3%83%B3%E3%82%AB%E3%83%B3"
+            alt="ポンカン"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">ポンカン</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              小ぶりで皮がむきやすく、濃厚な甘さと華やかな香りが特徴。
+              そのままはもちろん、果汁を炭酸で割れば爽快ドリンクに。
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==== 愛媛ブランド7種 ==== -->
+      <section class="mt-16 space-y-10">
+        <!-- 紅まどんな -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E7%B4%85%E3%81%BE%E3%81%A9%E3%82%93%E3%81%AA"
+            alt="紅まどんな"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">紅まどんな（愛媛果試第28号）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              ナイフいらずでとろけるゼリーのような果肉。平均糖度13度以上、
+              芳醇な甘さと微かな酸が高級スイーツを思わせます。
+              冬ギフトの王様として全国で人気。
+            </p>
+          </div>
+        </article>
+
+        <!-- 甘平 -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E7%94%98%E5%B9%B3"
+            alt="甘平"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">甘平（かんぺい）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              シャキッと弾ける薄膜の果肉に濃厚な甘みが凝縮。
+              「西の香」×「ポンカン」交配による愛媛オリジナルで、
+              収穫量が限られるプレミアム柑橘です。
+            </p>
+          </div>
+        </article>
+
+        <!-- 媛まどんな -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E5%AA%9B%E3%81%BE%E3%81%A9%E3%82%93%E3%81%AA"
+            alt="媛まどんな"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">媛まどんな（紅まどんな類似）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              紅まどんなと同等のとろける食感を持ち、県外マーケット向けに展開される姉妹ブランド。
+              ぷるぷる果肉と爽やかな甘みが冬のティータイムを華やかに彩ります。
+            </p>
+          </div>
+        </article>
+
+        <!-- せとか -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E3%81%9B%E3%81%A8%E3%81%8B"
+            alt="せとか"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">せとか</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              「清見×アンコール」×「マーコット」三元交配の傑作。
+              とろける果肉に溢れる果汁は“柑橘の大トロ”。濃厚な甘みと高貴な香りで
+              贅沢デザートの主役になります。
+            </p>
+          </div>
+        </article>
+
+        <!-- はるみ -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E3%81%AF%E3%82%8B%E3%81%BF"
+            alt="はるみ"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">はるみ</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              粒立ちの良いプチプチ食感とあふれる果汁が特徴。
+              酸味は穏やかで後味が軽く、子どもにも大人気。
+              ジュレやヨーグルトトッピングにも最適です。
+            </p>
+          </div>
+        </article>
+
+        <!-- しらぬい -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E4%B8%8D%E7%9F%A5%E7%81%AB"
+            alt="しらぬい"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">しらぬい（デコポン）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              可愛い“デコ”が目印。糖度14度前後の濃厚な甘さで
+              食べ応え抜群。ジューシーな果汁はスムージーや
+              パフェの主役にぴったりです。
+            </p>
+          </div>
+        </article>
+
+        <!-- 紅プリンセス -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E7%B4%85%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BB%E3%82%B9"
+            alt="紅プリンセス"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">愛媛果試第36号（紅プリンセス）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              紅まどんなの姉妹品種として誕生した最新柑橘。
+              とろける食感にフローラルな香りが重なり、
+              上品な甘みが口いっぱいに広がります。
+              流通量が少ない希少なプリンセスです。
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==== 初春～初夏4種 ==== -->
+      <section class="mt-16 space-y-10">
+        <!-- はるか -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E3%81%AF%E3%82%8B%E3%81%8B"
+            alt="はるか"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">はるか</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              明るいレモンイエローの果皮に反してまろやかな甘み。
+              酸味が少なく、蜂蜜を思わせるコクで春の人気者。
+              皮を器にしたサラダが映えます。
+            </p>
+          </div>
+        </article>
+
+        <!-- 河内晩柑 -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E6%B2%B3%E5%86%85%E6%99%A9%E6%9F%91"
+            alt="河内晩柑"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">
+              河内晩柑（美生柑・宇和ゴールド）
+            </h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              「和製グレープフルーツ」とも呼ばれる爽やかさ。
+              苦みが少なくジューシーで、初夏の水分補給にぴったり。
+              ジュースやカクテルベースにも重宝します。
+            </p>
+          </div>
+        </article>
+
+        <!-- 甘夏 -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E7%94%98%E5%A4%8F"
+            alt="甘夏"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">甘夏（川野夏橙）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              ほどよい酸味とほろ苦さが特徴。薄皮を活かした
+              サラダや寒天寄せにすると、大人の味わいに。
+              夏向けスイーツの名脇役です。
+            </p>
+          </div>
+        </article>
+
+        <!-- ニューサマーオレンジ -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B5%E3%83%9E%E3%83%BC"
+            alt="ニューサマーオレンジ"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">ニューサマーオレンジ</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              爽快なレモン香と柔らかな甘み。外皮の白いワタ部分も
+              甘く食べられるユニークさで、ピクルスやサラダに最適。
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==== 加工用・希少2種 ==== -->
+      <section class="mt-16 space-y-10">
+        <!-- フジミカン -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E3%83%95%E3%82%B8%E3%83%9F%E3%82%AB%E3%83%B3"
+            alt="フジミカン"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">フジミカン（藤中）</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              温州みかんの極早生系で、香り高い酸味が特徴。
+              ジュースや加工用として人気で、ギュッと詰まった
+              ビタミンCが夏前の身体を潤します。
+            </p>
+          </div>
+        </article>
+
+        <!-- スイートスプリング -->
+        <article class="flex flex-col gap-6 md:flex-row md:gap-10">
+          <img
+            src="https://placehold.co/800x450?text=%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0"
+            alt="スイートスプリング"
+            class="aspect-video w-full rounded-lg object-cover md:w-1/2"
+          />
+          <div class="flex flex-col gap-4 md:w-1/2">
+            <h4 class="text-lg font-bold">スイートスプリング</h4>
+            <p class="text-sm leading-relaxed text-[#897561]">
+              酸味がほとんど無く、驚くほど甘い春柑橘。
+              皮が厚めで保存性が高く、ジュースやジャムに最適。
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- ================================================= FOOTER (簡略) -->
+    <footer class="mt-20 border-t border-[#f4f2f0] px-6 py-10 text-center">
+      <p class="text-sm text-[#897561]">
+        © 2025 Ehime Citrus Cooperative
+      </p>
+    </footer>
+  </body>
+</html>
+```
