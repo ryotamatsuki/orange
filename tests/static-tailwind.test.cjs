@@ -10,5 +10,5 @@ test('runtime Tailwind external script has been removed',()=>{
 test('compiled CSS exists and contains Tailwind utility rules',()=>{
  assert.ok(css.length>5000);
  assert.match(css,/\.flex/);
- assert.match(css,/\.grid/);
+ assert.match(css,/--tw-/);
 });
