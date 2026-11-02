@@ -1,0 +1,38 @@
+name: Generate pinned static Tailwind CSS
+on:
+  push:
+    branches:
+      - security/static-tailwind-20261102
+    paths:
+      - index.html
+      - tailwind.config.cjs
+      - assets/tailwind-input.css
+      - .github/workflows/build-static-tailwind.yml
+permissions:
+  contents: write
+jobs:
+  build-css:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: security/static-tailwind-20261102
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Build CSS; do not ship runtime Tailwind JS
+        run: |
+          npm install --no-save --no-package-lock --no-audit --no-fund tailwindcss@3.4.17 @tailwindcss/forms@0.5.10 @tailwindcss/container-queries@0.1.1
+          npx tailwindcss -c tailwind.config.cjs -i assets/tailwind-input.css -o assets/tailwind.css --minify
+          test -s assets/tailwind.css
+      - name: Commit compiled CSS to review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/tailwind.css
+          if ! git diff --cached --quiet; then
+            git commit -m "build: generate static Tailwind CSS from pinned CLI"
+            git push origin HEAD:security/static-tailwind-20261102
+          fi
